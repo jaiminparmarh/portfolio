@@ -93,11 +93,11 @@ export default function Sidebar(props) {
               Backend
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/skills/Tools")}>
+            <button className="btn-sidebar" onClick={() => navigate("/skills/tools")}>
               Tools
             </button>
 
-            <button className="btn-sidebar"onClick={() => navigate("/skills/Creativeskills")}>
+            <button className="btn-sidebar"onClick={() => navigate("/skills/creativeskills")}>
               Creative Skills
             </button>
           </>
@@ -114,11 +114,11 @@ export default function Sidebar(props) {
               Backend
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/skills/Tools")}>
+            <button className="btn-sidebar" onClick={() => navigate("/skills/tools")}>
               Tools
             </button>
 
-            <button className="btn-sidebar"onClick={() => navigate("/skills/Creativeskills")}>
+            <button className="btn-sidebar"onClick={() => navigate("/skills/creativeskills")}>
               Creative Skills
             </button>
           </>
@@ -135,17 +135,17 @@ export default function Sidebar(props) {
               Backend
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/skills/Tools")}>
+            <button className="btn-sidebar" onClick={() => navigate("/skills/tools")}>
               Tools
             </button>
 
-            <button className="btn-sidebar"onClick={() => navigate("/skills/Creativeskills")}>
+            <button className="btn-sidebar"onClick={() => navigate("/skills/creativeskills")}>
               Creative Skills
             </button>
           </>
         )}
         {/* Tools */}
-        {location.pathname === "/skills/Tools" && (
+        {location.pathname === "/skills/tools" && (
           <>
             <button className="btn-sidebar" onClick={() => navigate("/skills/frontend")}>
               Frontend
@@ -155,17 +155,17 @@ export default function Sidebar(props) {
               Backend
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/skills/Tools")}>
+            <button className="btn-sidebar" onClick={() => navigate("/skills/tools")}>
               Tools
             </button>
 
-            <button className="btn-sidebar"onClick={() => navigate("/skills/Creativeskills")}>
+            <button className="btn-sidebar"onClick={() => navigate("/skills/creativeskills")}>
               Creative Skills
             </button>
           </>
         )}
         {/* Creativeskills */}
-        {location.pathname === "/skills/Creativeskills" && (
+        {location.pathname === "/skills/creativeskills" && (
           <>
             <button className="btn-sidebar" onClick={() => navigate("/skills/frontend")}>
               Frontend
@@ -175,11 +175,11 @@ export default function Sidebar(props) {
               Backend
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/skills/Tools")}>
+            <button className="btn-sidebar" onClick={() => navigate("/skills/tools")}>
               Tools
             </button>
 
-            <button className="btn-sidebar"onClick={() => navigate("/skills/Creativeskills")}>
+            <button className="btn-sidebar"onClick={() => navigate("/skills/creativeskills")}>
               Creative Skills
             </button>
           </>
@@ -188,70 +188,70 @@ export default function Sidebar(props) {
 
       {/* Project */}
         {/* Main Page */}
-        {location.pathname === "/Projects" && (
+        {location.pathname === "/projects" && (
           <>
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project1")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project1")}>
               <span>POS system</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project2")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project2")}>
               <span>Shoot & Edit Studio</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project3")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project3")}>
               <span>TextUtils</span>
             </button>
 
           </>
         )}
         {/* Project 1 */}
-        {location.pathname === "/projects/Project1" && (
+        {location.pathname === "/projects/project1" && (
           <>
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project1")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project1")}>
               
               <span>POS system</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project2")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project2")}>
               
               <span>Shoot & Edit Studio</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project3")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project3")}>
               <span>TextUtils</span>
             </button>
 
           </>
         )}
         {/* Project 2 */}
-        {location.pathname === "/projects/Project2" && (
+        {location.pathname === "/projects/project2" && (
           <>
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project1")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project1")}>
               <span>POS system</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project2")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project2")}>
               <span>Shoot & Edit Studio</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project3")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project3")}>
               <span>TextUtils</span>
             </button>
 
           </>
         )}
         {/* Project 3 */}
-        {location.pathname === "/projects/Project3" && (
+        {location.pathname === "/projects/project3" && (
           <>
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project1")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project1")}>
               <span>POS system</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project2")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project2")}>
               <span>Shoot & Edit Studio</span>
             </button>
 
-            <button className="btn-sidebar" onClick={() => navigate("/projects/Project3")}>
+            <button className="btn-sidebar" onClick={() => navigate("/projects/project3")}>
               <span>TextUtils</span>
             </button>
 

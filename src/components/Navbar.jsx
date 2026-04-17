@@ -15,7 +15,7 @@ export default function Navbar() {
         <NavLink to="/skills" className="nav-btn">
           Skills
         </NavLink>
-        <NavLink to="/Projects" className="nav-btn">
+        <NavLink to="/projects" className="nav-btn">
           Projects
         </NavLink>
         <NavLink to="/about" className="nav-btn">

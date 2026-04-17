@@ -28,7 +28,7 @@ export default function Projects() {
               <br />
               
                 <br />
-                <button className="home-btn" onClick={() => navigate("/projects/Project1")}>
+                <button className="home-btn" onClick={() => navigate("/projects/project1")}>
                 More...
             </button>
               </p>
@@ -47,7 +47,7 @@ export default function Projects() {
                 Shoot & Edit Cloud Studio is a creative digital studio focused on delivering high-quality visual and audio content. We specialize in transforming raw ideas into engaging, polished media that helps brands and individuals stand out in the digital space.
               <br />
                 <br />
-                <button className="home-btn" onClick={() => navigate("/projects/Project2")}>
+                <button className="home-btn" onClick={() => navigate("/projects/project2")}>
                 More...
             </button>
               </p>
@@ -65,7 +65,7 @@ export default function Projects() {
               <p>
                 TextUtils is a React-based web application that allows users to analyze and transform text efficiently with real-time updates. It includes multiple text formatting tools, live word and character count, reading time estimation, and dark/light mode support, demonstrating strong frontend development and state management skills.              <br />
                 <br />
-                <button className="home-btn" onClick={() => navigate("/Projects/Project3")}>
+                <button className="home-btn" onClick={() => navigate("/projects/project3")}>
                 More...
             </button>
               </p>

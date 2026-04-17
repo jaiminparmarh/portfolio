@@ -43,6 +43,8 @@ export default function About() {
 
         <div class="tag">HTML</div>
         <div class="tag">CSS</div>
+        <div class="tag">ReactJS</div>
+        <div class="tag">Bootstrap 5</div>
         <div class="tag">JavaScript</div>
         <div class="tag">PHP</div>
       </div>

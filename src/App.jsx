@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -24,10 +24,6 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
-  const [weather, setWeather] = useState(null);
-  const [error, setError] = useState("");
-
-
   return (
     <BrowserRouter>
       <Navbar />
@@ -55,7 +51,7 @@ function App() {
             {/* Projects */}
             <Route path="/projects/project1" element={<Project1 />} />
             <Route path="/projects/project2" element={<Project2 />} />
-            <Route path="/Projects/Project3" element={<Project3/>}/>
+            <Route path="/projects/project3" element={<Project3/>}/>
           </Routes>
         </div>
       </div>

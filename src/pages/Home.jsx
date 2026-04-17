@@ -71,7 +71,7 @@ export default function Home() {
         If you have a project, internship, or collaboration in mind,
         feel free to reach out.
       </p>
-      <button className="home-btn" onClick={() => navigate("/Contact")}>
+      <button className="home-btn" onClick={() => navigate("/contact")}>
               Get in touch
             </button>
     </div>
