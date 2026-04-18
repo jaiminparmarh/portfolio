@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Project4() {
   const navigate = useNavigate();
+  const projectTaskPreviewImages = Array.from({ length: 23 }, (_, index) => `/Project-Task/${index + 1}.png`);
 
   return (
     <div>
@@ -35,6 +36,20 @@ export default function Project4() {
             alt="Project and Task Management dashboard"
             className="project-img project-img-large"
           />
+        </div>
+
+        <div className="studio-preview" aria-label="Project and Task preview gallery">
+          <div className="studio-preview-track studio-track-projecttask">
+            {[...projectTaskPreviewImages, ...projectTaskPreviewImages].map((imagePath, index) => (
+              <img
+                key={`${imagePath}-task-${index}`}
+                src={imagePath}
+                alt={`Project and Task preview ${index % projectTaskPreviewImages.length + 1}`}
+                className="studio-preview-image"
+                loading="lazy"
+              />
+            ))}
+          </div>
         </div>
 
         <div className="project-feature-grid">

@@ -507,7 +507,15 @@ ul.why-list li,
   width: max-content;
   gap: 10px;
   align-items: center;
-  animation: studioScroll 42s linear infinite;
+  animation: studioScroll 70s linear infinite;
+}
+
+.studio-track-editing {
+  animation-duration: 78s;
+}
+
+.studio-track-projecttask {
+  animation-duration: 95s;
 }
 
 .studio-preview-image {
@@ -529,7 +537,15 @@ ul.why-list li,
 }
 
 .studio-preview-card .studio-preview-track {
-  animation-duration: 30s;
+  animation-duration: 56s;
+}
+
+.studio-preview-card .studio-track-editing {
+  animation-duration: 62s;
+}
+
+.studio-preview-card .studio-track-projecttask {
+  animation-duration: 78s;
 }
 
 .studio-preview-image-card {

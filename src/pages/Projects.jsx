@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Projects() {
   const navigate = useNavigate();
   const editingPreviewImages = Array.from({ length: 14 }, (_, index) => `/Editing/${index + 1}.png`);
+  const projectTaskPreviewImages = Array.from({ length: 23 }, (_, index) => `/Project-Task/${index + 1}.png`);
 
   return (
     <>
@@ -19,7 +20,19 @@ export default function Projects() {
 
       <div className="projects-grid">
         <article className="project-card project-card--modern">
-          <img src="/Project&Task.png" alt="Project and Task Management System" className="project-img project-card-img"/>
+          <div className="studio-preview studio-preview-card" aria-label="Project and Task card preview gallery">
+            <div className="studio-preview-track studio-track-projecttask">
+              {[...projectTaskPreviewImages, ...projectTaskPreviewImages].map((imagePath, index) => (
+                <img
+                  key={`${imagePath}-task-card-${index}`}
+                  src={imagePath}
+                  alt={`Project and Task card preview ${index % projectTaskPreviewImages.length + 1}`}
+                  className="studio-preview-image studio-preview-image-card"
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </div>
           <div className="project-card-content">
             <div className="project-chip-row">
               <span className="project-chip">React + Vite</span>
@@ -40,7 +53,7 @@ export default function Projects() {
 
         <article className="project-card project-card--modern">
           <div className="studio-preview studio-preview-card" aria-label="Shoot and Edit card preview gallery">
-            <div className="studio-preview-track">
+            <div className="studio-preview-track studio-track-editing">
               {[...editingPreviewImages, ...editingPreviewImages].map((imagePath, index) => (
                 <img
                   key={`${imagePath}-card-${index}`}

@@ -47,7 +47,7 @@ export default function Project2() {
         </p>
 
         <div className="studio-preview" aria-label="Shoot and Edit project preview gallery">
-          <div className="studio-preview-track">
+          <div className="studio-preview-track studio-track-editing">
             {[...previewImages, ...previewImages].map((imagePath, index) => (
               <img
                 key={`${imagePath}-${index}`}
