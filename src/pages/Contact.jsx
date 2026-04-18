@@ -49,7 +49,7 @@ export default function Contact() {
           <p className="contact-eyebrow">Let&apos;s connect</p>
           <h2>Build Something Bold Together</h2>
           <p>
-            Have an idea, freelance role, or internship opportunity? Share the
+            Have an idea, freelance role, or internship or Job opportunity? Share the
             details and I&apos;ll get back quickly.
           </p>
 

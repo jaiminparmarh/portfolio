@@ -11,7 +11,7 @@ export default function Home() {
               <h1>
                 Hi, I&apos;m <br /> <span>Jaimin H. Parmar</span>
               </h1>
-              <h2 className="typing-text">Frontend Developer | React JS</h2>
+              <h2 className="typing-text">Frontend Developer | React</h2>
               <p>
                 I build modern web interfaces where design meets functionality.
                 <br />
