@@ -7,8 +7,8 @@ const Footer = () => {
       <p>© {new Date().getFullYear()} Jaimin Parmar</p>
       <WeatherApi/>
       <div className="footer-links">
-        <a href="https://github.com/jaiminparmarh" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/jaiminparmarh/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/jaiminparmarh" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jaiminparmarh/" target="_blank" rel="noreferrer">LinkedIn</a>
         
       </div>
     </footer>

@@ -12,8 +12,8 @@ const WeatherApi = () => {
 
       {weather ? (
         <>
-          <p className="footer-links">{weather.main.temp} °C</p>
-          <p className="footer-links">{weather.weather[0].description}</p>
+          <p className="weather-temp">{weather.main.temp} C</p>
+          <p className="weather-desc">{weather.weather[0].description}</p>
         </>
       ) : !error ? (
         <p>Detecting...</p>

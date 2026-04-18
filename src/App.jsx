@@ -19,6 +19,7 @@ import Creativeskills from "./Skills/Creativeskills";
 import Project1 from "./Projects/Project1";
 import Project2 from "./Projects/Project2";
 import Project3 from "./Projects/Project3";
+import Project4 from "./Projects/Project4";
 import ScrollToTop from "./components/ScrollToTop";
 
 
@@ -28,10 +29,12 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <ScrollToTop/>
-      <div style={{ display: "flex" }}>
-        <Sidebar Name="JAIMIN H. PARMAR" />
+      <div className="app-layout">
+        <aside className="app-sidebar">
+          <Sidebar Name="JAIMIN H. PARMAR" />
+        </aside>
 
-        <div className="content">
+        <main className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -52,8 +55,9 @@ function App() {
             <Route path="/projects/project1" element={<Project1 />} />
             <Route path="/projects/project2" element={<Project2 />} />
             <Route path="/projects/project3" element={<Project3/>}/>
+            <Route path="/projects/project4" element={<Project4/>}/>
           </Routes>
-        </div>
+        </main>
       </div>
 
       <Footer />
