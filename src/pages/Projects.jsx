@@ -76,9 +76,14 @@ export default function Projects() {
               A digital media service platform for video, photo, audio, and
               creative production workflows from planning to final delivery.
             </p>
-            <button className="home-btn" onClick={() => navigate("/projects/project2")}>
-              Explore Case Study
-            </button>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <button className="home-btn" onClick={() => navigate("/projects/project2")}>
+                Explore Case Study
+              </button>
+              <button className="home-btn" onClick={() => window.open('https://editx.xo.je', '_blank')}>
+                Visit Live Site
+              </button>
+            </div>
           </div>
         </article>
 
@@ -92,12 +97,17 @@ export default function Projects() {
             </div>
             <h2>TextUtils</h2>
             <p>
-              A fast text utility app with transformation tools, live metrics,
+              My first React project where I started learning ReactJS. A fast text utility app with transformation tools, live metrics,
               and readability-focused UX for day-to-day writing workflows.
             </p>
-            <button className="home-btn" onClick={() => navigate("/projects/project3")}>
-              Explore Case Study
-            </button>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <button className="home-btn" onClick={() => navigate("/projects/project3")}>
+                Explore Case Study
+              </button>
+              <button className="home-btn" onClick={() => window.open('https://jaiminparmarh.github.io/Textutils/', '_blank')}>
+                Visit Live Site
+              </button>
+            </div>
           </div>
         </article>
 

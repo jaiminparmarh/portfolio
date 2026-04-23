@@ -7,9 +7,14 @@ export default function Project2() {
   return (
     <div>
       <section className="section project-detail">
-        <button className="home-btn project-back-btn" onClick={() => navigate("/projects")}>
-          Back to Projects
-        </button>
+        <div style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
+          <button className="home-btn project-back-btn" onClick={() => navigate("/projects")}>
+            Back to Projects
+          </button>
+          <button className="home-btn" onClick={() => window.open('https://editx.xo.je', '_blank')}>
+            Visit Live Site
+          </button>
+        </div>
 
         <div className="project-hero-layout">
           <div>
