@@ -18,6 +18,9 @@ export default function Navbar() {
         <NavLink to="/projects" className="nav-btn">
           Projects
         </NavLink>
+        <NavLink to="/certificates" className="nav-btn">
+          Certificates
+        </NavLink>
         <NavLink to="/about" className="nav-btn">
           About
         </NavLink>

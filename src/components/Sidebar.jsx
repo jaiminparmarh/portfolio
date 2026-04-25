@@ -28,7 +28,16 @@ export default function Sidebar(props) {
     <div className={`sidebar-stack ${isHomePage ? "show-profile-mobile" : "hide-profile-mobile"}`}>
       {/* PROFILE SECTION */}
       <div className="sidebar-2">
-        <img src="/Jaimin.png" alt="Profile" className="profile-img none" />
+        <div className="profile-flip-card none" aria-label="Profile photo and avatar animation">
+          <div className="profile-flip-card-inner">
+            <div className="profile-face profile-face-front">
+              <img src="/Jaimin.png" alt="Profile" className="profile-img" />
+            </div>
+            <div className="profile-face profile-face-back">
+              <img src="/avtar.gif" alt="Avatar animation" className="profile-img" />
+            </div>
+          </div>
+        </div>
 
         <span className="pronouns none">He / Him</span>
         <h3 className="name none">{props.Name}</h3>

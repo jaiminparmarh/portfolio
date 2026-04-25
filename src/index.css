@@ -163,9 +163,42 @@ a {
   gap: 7px;
 }
 
+.profile-flip-card {
+  width: 102px;
+  height: 102px;
+  perspective: 1000px;
+}
+
+.profile-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: profileFlip 4s infinite ease-in-out;
+}
+
+.profile-flip-card:hover .profile-flip-card-inner,
+.profile-flip-card:focus-within .profile-flip-card-inner {
+  animation: none;
+  transform: rotateY(180deg);
+}
+
+.profile-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-face-back {
+  transform: rotateY(180deg);
+}
+
 .profile-img {
-  width: 94px;
-  height: 94px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.28);
@@ -613,6 +646,87 @@ ul.why-list li,
   padding: 8px;
 }
 
+.certificates-page .projects-grid {
+  margin-top: 18px;
+}
+
+.certificate-card h2 {
+  font-size: 1.12rem;
+  margin-bottom: 6px;
+}
+
+.certificate-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.certificate-card:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+.certificate-card p {
+  color: var(--text-muted);
+}
+
+.certificate-image {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(3, 12, 19, 0.45);
+  padding: 8px;
+}
+
+.certificate-preview-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(5, 15, 24, 0.88);
+  backdrop-filter: blur(5px);
+}
+
+.certificate-preview-content {
+  width: min(1120px, 100%);
+  max-height: 90vh;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(5, 16, 25, 0.92);
+  box-shadow: var(--shadow-heavy);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.certificate-close-btn {
+  justify-self: end;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #071725;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-orange));
+}
+
+.certificate-preview-image {
+  width: 100%;
+  max-height: calc(90vh - 64px);
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.24);
+}
+
 .edu-card,
 .exp-card,
 .pos-point,
@@ -875,6 +989,20 @@ ul.why-list li,
   }
 }
 
+@keyframes profileFlip {
+  0%,
+  40% {
+    transform: rotateY(0deg);
+  }
+  50%,
+  90% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 @media (max-width: 1100px) {
   .app-layout {
     flex-direction: column;
@@ -966,13 +1094,6 @@ ul.why-list li,
     padding: 12px 10px 84px;
   }
 
-  .projects-showcase .projects-grid {
-    max-height: 68vh;
-    overflow-y: auto;
-    padding-right: 4px;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .sidebar-stack.hide-profile-mobile .sidebar-2 {
     display: none;
   }
@@ -1030,5 +1151,18 @@ ul.why-list li,
     margin: 10px;
     border-radius: 12px;
     border: 1px solid var(--line-soft);
+  }
+
+  .certificate-preview-overlay {
+    padding: 10px;
+  }
+
+  .certificate-preview-content {
+    max-height: 92vh;
+    padding: 10px;
+  }
+
+  .certificate-preview-image {
+    max-height: calc(92vh - 62px);
   }
 }
